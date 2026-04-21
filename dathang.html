@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Đặt Hàng</title>
+    <link rel="stylesheet" href="css/dathang.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+       <header class="sticky-header">
+        <div class="top-bar">
+            <div class="logo">
+                <img src="img/logo.svg" alt="Logo Trạm Ăn Vặt">
+            </div>
+
+            <div class="search-box">
+                <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="contact">
+                <button class="btn-promo">TIN KHUYẾN MÃI</button>
+                <span class="phone">0357.295.295</span>
+                <a href="#" class="cart-box">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-badge">0</span>
+                </a>
+            </div>
+        </div>
+        <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">TRANG CHỦ</a></li>
+                <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
+                <li><a href="sanpham.html">SẢN PHẨM</a></li>
+                <li><a href="dathang.html">ĐẶT HÀNG</a></li>
+                <li><a href="lienhe.html">LIÊN HỆ</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <main>
+        <div class="container">
+            <div class="content-wrapper">
+                <!-- Products Grid -->
+                <div class="products-section">
+                    <div class="products-grid" id="productsGrid">
+                        <!-- Sản phẩm được hiển thị trực tiếp trong HTML -->
+                        <div class="product-card" data-id="1" data-name="Bim Bim Quê Tàm Bá Tuyết 300GR" data-price="55000">
+                            <img src="img/bim bim.svg" alt="Bim Bim Quê Tàm Bá Tuyết 300GR" class="product-image">
+                            <div class="product-name">Bim Bim Quê Tàm Bá Tuyết 300GR</div>
+                            <div class="product-price">55.000₫</div>
+                        </div>
+                        <div class="product-card" data-id="2" data-name="RAU MỰC NƯỚNG BBQ 16GR" data-price="5000">
+                            <img src="img/râu mực.svg" alt="RAU MỰC NƯỚNG BBQ 16GR" class="product-image">
+                            <div class="product-name">RAU MỰC NƯỚNG BBQ 16GR</div>
+                            <div class="product-price">5.000₫</div>
+                        </div>
+                        <div class="product-card" data-id="3" data-name="SNACK SASHIMI BÁ TUYẾT 25GR" data-price="5000">
+                            <img src="img/snack.svg" alt="SNACK SASHIMI BÁ TUYẾT 25GR" class="product-image">
+                            <div class="product-name">SNACK SASHIMI BÁ TUYẾT 25GR</div>
+                            <div class="product-price">5.000₫</div>
+                        </div>
+                        <div class="product-card" data-id="4" data-name="SỮA CHUA UỐNG VỊ TRÁI CÂY WAHAMA" data-price="50000">
+                            <img src="img/sữa chua.svg" alt="SỮA CHUA UỐNG VỊ TRÁI CÂY WAHAMA" class="product-image">
+                            <div class="product-name">SỮA CHUA UỐNG VỊ TRÁI CÂY WAHAMA</div>
+                            <div class="product-price">50.000₫</div>
+                        </div>
+                        <div class="product-card" data-id="5" data-name="RIO COCKTAIL CHAI" data-price="42000">
+                            <img src="img/rio.svg" alt="RIO COCKTAIL CHAI" class="product-image">
+                            <div class="product-name">RIO COCKTAIL CHAI</div>
+                            <div class="product-price">42.000₫</div>
+                        </div>
+                        <div class="product-card" data-id="6" data-name="SOCOLA DÁNG HỘP 408GR" data-price="90000">
+                            <img src="img/socola.svg" alt="SOCOLA DÁNG HỘP 408GR" class="product-image">
+                            <div class="product-name">SOCOLA DÁNG HỘP 408GR</div>
+                            <div class="product-price">90.000₫</div>
+                        </div>
+                        <div class="product-card" data-id="7" data-name="KẸO DẺO NHÂN CHẤY SIRO" data-price="44000">
+                            <img src="img/kẹo dẻo.svg" alt="KẸO DẺO NHÂN CHẤY SIRO" class="product-image">
+                            <div class="product-name">KẸO DẺO NHÂN CHẤY SIRO</div>
+                            <div class="product-price">44.000₫</div>
+                        </div>
+                        <div class="product-card" data-id="8" data-name="BÁNH QUY QUE TICKY THÁI LAN" data-price="38000">
+                            <img src="img/bánh quy.svg" alt="BÁNH QUY QUE TICKY THÁI LAN" class="product-image">
+                            <div class="product-name">BÁNH QUY QUE TICKY THÁI LAN</div>
+                            <div class="product-price">38.000₫</div>
+                        </div>
+                        <div class="product-card" data-id="9" data-name="NƯỚC TRÁI CÂY FULL TOPPING DỮ ẠNI" data-price="52000">
+                            <img src="img/nước trái cây.svg" alt="NƯỚC TRÁI CÂY FULL TOPPING DỮ ẠNI" class="product-image">
+                            <div class="product-name">NƯỚC TRÁI CÂY FULL TOPPING DỮ ẠNI</div>
+                            <div class="product-price">52.000₫</div>
+                        </div>
+                        <div class="product-card" data-id="10" data-name="KẸO SỮA ĐỖ NON MÔNG CỔ" data-price="48000">
+                            <img src="img/kẹo sữa.svg" alt="KẸO SỮA ĐỖ NON MÔNG CỔ" class="product-image">
+                            <div class="product-name">KẸO SỮA ĐỖ NON MÔNG CỔ</div>
+                            <div class="product-price">48.000₫</div>
+                        </div>
+                        <div class="product-card" data-id="11" data-name="NƯỚC SODA TRÁI CÂY GENKI" data-price="15000">
+                            <img src="img/nước soda.svg" alt="NƯỚC SODA TRÁI CÂY GENKI" class="product-image">
+                            <div class="product-name">NƯỚC SODA TRÁI CÂY GENKI</div>
+                            <div class="product-price">15.000₫</div>
+                        </div>
+                        <div class="product-card" data-id="12" data-name="GÀ XÀO SẢ ỚT CAY YOGUO 75GR" data-price="45000">
+                            <img src="img/gà.svg" alt="GÀ XÀO SẢ ỚT CAY YOGUO 75GR" class="product-image">
+                            <div class="product-name">GÀ XÀO SẢ ỚT CAY YOGUO 75GR</div>
+                            <div class="product-price">45.000₫</div>
+                        </div>
+                    </div>
+
+                    <!-- Thank You Message -->
+                    <div class="thank-you-box">
+                        <div class="ice-cream-icon">🍦</div>
+                        <div class="thank-you-content">
+                            <h2>Cảm ơn bạn đã đặt hàng !</h2>
+                            <p>Chúng tôi sẽ liên hệ sớm</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cart Sidebar -->
+                <div class="cart-sidebar">
+                    <div class="cart-boxx">
+                        <h3>Giỏ hàng của bạn</h3>
+                        <div class="cart-items" id="cartItems">
+                            <p style="text-align: center; padding: 20px; color: #666;">Giỏ hàng trống</p>
+                        </div>
+                        <div class="cart-total">
+                            <strong>Tổng cộng</strong>
+                            <strong><span id="totalPrice">0</span>₫</strong>
+                        </div>
+                        <button class="btn-checkout" onclick="showCheckoutForm()">Tiếp tục đặt hàng</button>
+                    </div>
+
+                    <!-- Checkout Form -->
+                    <div class="checkout-form" id="checkoutForm" style="display: none;">
+                        <h3>Thông tin đặt hàng</h3>
+                        <form onsubmit="submitOrder(event)">
+                            <div class="form-group">
+                                <label>Họ và tên</label>
+                                <input type="text" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Số điện thoại</label>
+                                <input type="tel" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Địa chỉ giao hàng</label>
+                                <input type="text" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Ghi chú</label>
+                                <textarea rows="3"></textarea>
+                            </div>
+                            <div class="payment-method">
+                                <label>
+                                    <input type="radio" name="payment" value="cod" checked>
+                                    <span>COD</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="payment" value="bank">
+                                    <span>Chuyển khoản</span>
+                                </label>
+                            </div>
+                            <button type="submit" class="btn-submit">Xác nhận đặt hàng</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>             
+    </main>
+    <footer>
+        <div class="footer-container">          
+            <div class="footer-logo-box">
+                <img src="img/logo2.svg" alt="Logo Trạm Ăn Vặt" class="footer-logo">
+            </div>
+            <div class="footer-contact">
+                <a href="tel:0357295295" class="footer-phone">0357.295.295</a>             
+                <a href="https://maps.app.goo.gl/JxB3f7P9DBhHVN7F7" target="_blank" class="footer-address">
+                    TẠI: CƠ SỞ ĐẠI HỌC VINH
+                </a>
+                <p>Free Ship toàn quốc với đơn hàng từ 499.000 đồng</p>
+            </div>            
+            <div class="footer-commitment">
+                <p class="philosophy">Lấy Chữ Tâm Đế Phục Vụ - Lấy Chữ Tín Để Phát Triển</p>
+                <p>Shop cam kết chất lượng - giá cả - thái độ phục vụ tốt nhất đến khách hàng.</p>
+            </div>   
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Trạm Ăn Vặt. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="js/dathang.js"></script> 
+</body>
+</html>

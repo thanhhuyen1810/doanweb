@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ</title>
+    <link rel="stylesheet" href="css/lienhe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> 
+</head>
+<body>
+    <header class="sticky-header">
+        <div class="top-bar">
+            <div class="logo">
+                <img src="img/logo.svg" alt="Logo Trạm Ăn Vặt">
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div class="contact">
+                <button class="btn-promo">TIN KHUYẾN MÃI</button>
+                <span class="phone">0357.295.295</span>
+                <a href="#" class="cart-box">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-badge">0</span>
+                </a>
+            </div>
+        </div>
+        <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">TRANG CHỦ</a></li>
+                <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
+                <li><a href="sanpham.html">SẢN PHẨM</a></li>
+                <li><a href="dathang.html">ĐẶT HÀNG</a></li>
+                <li><a href="lienhe.html">LIÊN HỆ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contact-container">
+        <div class="contact-info">
+            <p>
+                Điện Thoại: <a href="tel:0357295295" class="contact-link">0357.295.295</a>
+            </p>
+            <p>
+                Địa Chỉ: <a href="https://maps.app.goo.gl/JxB3f7P9DBhHVN7F7" target="_blank" class="contact-link">ĐẠI HỌC VINH</a>
+            </p>
+            <p>Free Ship toàn quốc với đơn hàng <br> từ 499.000 đồng</p>
+        </div>
+
+        <div class="contact-form">
+            <p class="form-title"><b>HOẶC QUÝ KHÁCH CÓ THỂ YÊU CẦU CHÚNG TÔI GỌI LẠI TƯ VẤN TẠI ĐÂY !</b></p>
+
+            <div id="successNotification" class="success-message">
+                Yêu cầu tư vấn của Quý Khách đã được gửi thành công! Chúng tôi sẽ liên hệ lại trong thời gian sớm nhất.
+            </div>
+            <form id="contactForm"> <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Họ và tên" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="tel" id="phone" name="phone" placeholder="Số điện thoại" required>
+                </div>
+
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="5" placeholder="Nội dung tin nhắn/yêu cầu..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="submit-button">GỬI YÊU CẦU TƯ VẤN</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            
+            <div class="footer-logo-box">
+                <img src="img/logo2.svg" alt="Logo Trạm Ăn Vặt" class="footer-logo">
+            </div>
+            
+            <div class="footer-contact">
+                <a href="tel:0357295295" class="footer-phone">0357.295.295</a>
+                
+                <a href="https://maps.app.goo.gl/JxB3f7P9DBhHVN7F7" target="_blank" class="footer-address">
+                    TẠI: CƠ SỞ ĐẠI HỌC VINH
+                </a>
+                <p>Free Ship toàn quốc với đơn hàng từ 499.000 đồng</p>
+            </div>
+            
+            <div class="footer-commitment">
+                <p class="philosophy">Lấy Chữ Tâm Đế Phục Vụ - Lấy Chữ Tín Để Phát Triển</p>
+                <p>Shop cam kết chất lượng - giá cả - thái độ phục vụ tốt nhất đến khách hàng.</p>
+            </div> 
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Trạm Ăn Vặt. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="js/lienhe.js"></script> 
+</body>
+</html>
